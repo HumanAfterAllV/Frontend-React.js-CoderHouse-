@@ -1,0 +1,40 @@
+.header__Nav--Icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.header__Nav--Icon__element--person{
+    width: 35px;
+    height: 25px;
+    padding-right: 0.5rem;
+}
+
+.header__Nav--Icon__element--bag{
+    width: 60px;
+    height: 30px;
+    padding-right: 0.5rem;
+}
+
+.header__Nav--Icon__element--menu{
+    width: 65px;
+    height: 40px;
+    padding-right: 0.5rem;
+}
+
+.bagCounter[data-count]:after{
+    position:absolute;
+    right:10%;
+    top:8%;
+    content: attr(data-count);
+    font-size:60%;
+    padding:.2em;
+    border-radius:50%;
+    min-width: 10px;
+    line-height:10px;
+    color: white;
+    background:black;
+    text-align:center;
+  }

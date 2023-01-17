@@ -1,14 +1,11 @@
+import NavBar from "./NavBar";
+
 const Header = () => 
 {
+    const headerUp = true;
     return (
-        <header>
-            <h1>Titulo</h1>
-            <nav>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-            </nav>
+        <header className="header">
+            <NavBar headerUp={true}/>
         </header>
     )
 };

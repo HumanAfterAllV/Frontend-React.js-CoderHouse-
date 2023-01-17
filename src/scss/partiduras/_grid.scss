@@ -1,0 +1,24 @@
+//Grid index
+#root{
+    height: 100vh;
+    display: grid;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
+}
+
+#section__1{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#section__2{
+    height: 100vh;
+    display: grid;
+}
+
+#section__3{
+    height: 100vh;
+    display: grid;
+}
