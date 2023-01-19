@@ -2,9 +2,13 @@ import CardWidget from "./CardWidget";
 
 const NavBar = (props) => 
 {
-  if(props.headerUp) 
+
+  const { headerUp, linkFooter, hrefLinkFooter} = props;
+
+
+  if(headerUp) 
   {
-    return (
+    return(
     <nav className="header__Nav" >
       <div className="header__Nav--tittle animate__animated animate__slideInLeft">
         <a href="">Ink1.0.1Store</a>
@@ -17,16 +21,15 @@ const NavBar = (props) =>
       </ul>
       <CardWidget/>
     </nav>
-    )
+    );
   }
   else
   {
     return(
       <nav className="header__Nav">
-        <a href={props.hrefLinkFooter}>{props.linkFooter}</a>
+        <a href={hrefLinkFooter}>{linkFooter}</a>
       </nav>
-    )
-
+    );
   }
 }
 

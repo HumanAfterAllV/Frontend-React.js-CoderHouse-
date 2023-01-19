@@ -32,6 +32,7 @@
     color: black;
 }
 
+
 .header__Nav--ul{
     display: flex;
     flex-direction: row;
@@ -39,6 +40,15 @@
     list-style: none;
     justify-content: space-around;
 }
+
+.header__Nav--ul li{
+    transition: all .2s ease-in-out;
+}
+
+.header__Nav--ul li:hover{
+    transform: scale(1.1);
+}
+
 
 .header__Nav--ul__element{
     text-decoration: none;
@@ -48,4 +58,5 @@
     font-weight: bold;
     color: black;
 }
+
 
