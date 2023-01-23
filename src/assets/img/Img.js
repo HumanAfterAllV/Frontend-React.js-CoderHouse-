@@ -8,5 +8,4 @@ export default [
     shoppingBag,
     menu,
     person
-
 ]
