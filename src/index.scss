@@ -1,5 +1,4 @@
 //Abstrascts import
-@import "./scss/abstracts/mixins";
 @import "./scss/abstracts/variables";
 
 //Base import
@@ -9,7 +8,9 @@
 //Partiduras import
 @import "./scss/partiduras/grid";
 @import "./scss/partiduras/animaciones";
+@import "./scss/partiduras/container";
 @import "./scss/partiduras/header";
 @import "./scss/partiduras/navShop";
-
+@import "./scss/partiduras/side";
+@import "./scss/partiduras/main";
 @import "./scss/partiduras/footer";

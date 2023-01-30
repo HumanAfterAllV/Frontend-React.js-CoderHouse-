@@ -1,16 +1,16 @@
+import Side from "./Side";
 import Header from "./Header";
 import Main from "./Main";
-import Footer from "./Footer";
 
-function App()
-{
-  return(
-    <>
+const App = () => {
+  return (
+    <div id="container">
       <Header/>
+      <Side/>
       <Main/>
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
 

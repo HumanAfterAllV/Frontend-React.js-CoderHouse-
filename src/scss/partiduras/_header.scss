@@ -1,19 +1,5 @@
-.header{
-    height: 90px;
-    width: 100%;
-}
-
-.header__Nav{
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction:row;
-    z-index: 2;
-    position: fixed;
-    background-attachment: fixed;
+#header{
+    grid-area: header;
 }
 
 .header__Nav--tittle{
@@ -23,38 +9,15 @@
     padding-left: 1rem;
 }
 
-.header__Nav--tittle a{
+.header__Nav--title a{
     text-decoration: none;
     list-style: none;
-    font-size: 1.5rem;
-    font-family: "Lato-Bold";
-    font-weight: bold;
-    color: black;
-}
-
-
-.header__Nav--ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.header__Nav--ul li{
+    font-size: 2rem;
+    font-family: "library-3";
+    color: white;
     transition: all .2s ease-in-out;
 }
 
-.header__Nav--ul li:hover{
+.header__Nav--title a:hover{
     transform: scale(1.1);
-}
-
-
-.header__Nav--ul__element{
-    text-decoration: none;
-    padding-right: 4rem;
-    font-family: "Lato-Light";
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
 }

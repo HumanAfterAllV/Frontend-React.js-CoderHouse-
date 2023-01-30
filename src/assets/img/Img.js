@@ -1,5 +1,5 @@
-import shoppingBag from "./shoppingBag.png";
-import menu from "./menu.png";
+import shoppingBag from "./icons/shoppingBag.png";
+import menu from "./icons/menu.png";
 
 
 
