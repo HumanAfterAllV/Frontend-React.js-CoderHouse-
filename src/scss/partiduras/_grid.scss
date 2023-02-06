@@ -1,14 +1,21 @@
 //Index GRID
 #container{
-    height: 100vh;
     display: grid;
+    height: 100vh;
     transition: 300ms;
+
     background: whitesmoke;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
     grid-template-rows: 100px 1fr;
     grid-template-columns: 150px 1fr;
     grid-template-areas: "aside header header" 
                          "aside main main";
+}
+
+#main{
+    display: flex;
+    grid-area: main;
 }

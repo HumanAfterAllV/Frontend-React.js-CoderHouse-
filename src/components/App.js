@@ -1,16 +1,36 @@
-import Side from "./Side";
-import Header from "./Header";
+import { useState } from "react";
+import ItemListContainer from "./ItemListContainer";
 import Main from "./Main";
+import Side from "./Side";
 
 const App = () => {
+  const [allProducts, setAllProducts] = useState([]);
+  const [totalProducts, setTotalProducts] = useState(0);
+  const [countProducts, setCountProducts] = useState(0);
   return (
     <div id="container">
-      <Header/>
+      <ItemListContainer
+        allProducts = {allProducts}
+        setAllProducts = {setAllProducts}
+        totalProducts = {totalProducts}
+        setTotalProducts = {setTotalProducts}
+        countProducts = {countProducts}
+        setCountProducts = {setCountProducts} 
+      />
       <Side/>
-      <Main/>
+      <Main
+        allProducts = {allProducts}
+        setAllProducts = {setAllProducts}
+        totalProducts = {totalProducts}
+        setTotalProducts = {setTotalProducts}
+        countProducts = {countProducts}
+        setCountProducts = {setCountProducts} 
+      />
     </div>
   )
 }
 
 export default App
+
+
 

@@ -1,9 +1,32 @@
 [
     {
         "id": 1,
-        "title":"Cazadora Mezclilla - Spiderman DS_01",
+        "title": "Denim Jacket - Eren Jaeger DS_01",
+        "img": "../../public/img/products/Chamarra-Eren.jpg",
+        "size": "G",
+        "price": 1299,
+        "stock": 1,
+        "quantity": 1,
+        "descriptions": "Eren Jaeger Design Denim Jacket v1.0.1"
+    },
+    {
+        "id": 2,
+        "title": "Denim Jacket - Spiderman DS_02",
+        "img": "../../public/img/products/Chamarra-Spiderman.jpeg",
+        "size": "M",
         "price": 999,
-        "description": "Chamarra de mezclilla con diseño spiderman v1.0.1",
-        "thumnail": "" 
+        "stock": 1,
+        "quantity": 1,
+        "descriptions": "Spiderman Design Denim Jacket v1.0.1"
+    },
+    {
+        "id": 3,
+        "title": "Denim Jacket - RickAndMorty DS_03",
+        "img": "../../public/img/products/Chamarra-RickAndMorty.jpeg",
+        "price": 999,
+        "size": "M",
+        "stock": 1,
+        "quantity": 1,
+        "descriptions": "RickAndMorty Design Denim Jacket v1.0.1"
     }
 ]

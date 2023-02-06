@@ -4,6 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-content: space-around;
+	overflow: hidden;
+	
 	background-color: black;
 }
 
@@ -34,13 +36,15 @@
 
 .aside__chl--ul li{
 	list-style: none;
+
 	padding-bottom: 5.5rem;
 }
 
 .aside__chl--ul__item a{
 	text-decoration: none;
+
 	font-family: "rajdhani";
-	color: whitesmoke;
 	font-size: 1.4rem;
+	color: whitesmoke;
 	
 }
