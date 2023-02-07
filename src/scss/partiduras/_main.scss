@@ -9,6 +9,7 @@
 
 .main__article {
 	border-radius: 10px;
+    height: 520px;
 }
 
 .main__article:hover {
@@ -47,16 +48,6 @@
 
 .main__article--info p{
     font-family: "rajdhani";
-}
-
-.price {
-	font-size: 18px;
-	font-weight: 900;
-}
-
-.cart-empty {
-	padding: 20px;
-	text-align: center;
 }
 
 .hidden {

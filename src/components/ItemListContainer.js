@@ -30,11 +30,11 @@ const ItemListContainer = ({
 		<header id="header">
       <div>
       </div>
-      <div className="header__title">
+      <div className="header__title animate__animated animate__slideInDown">
         <h1>InkV1.0.1</h1>
       </div>
 
-			<div className='container-icon'>
+			<div className='container-icon animate__animated animate__slideInUp'>
 				<div className='container-cart-icon' onClick={() => setActive(!active)}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
@@ -59,7 +59,7 @@ const ItemListContainer = ({
 					{allProducts.length ? (
 						<>
 							<div className='row-product'>
-								{allProducts.map(product => (
+								{allProducts && allProducts.map(product => (
 									<div className='cart-product' key={product.id}>
 										<div className='info-cart-product'>
 											<span className='cantidad-producto-carrito'>

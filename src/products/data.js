@@ -28,5 +28,6 @@ export const data = [
         stock: 1,
         quantity: 1,
         descriptions: "RickAndMorty Design Denim Jacket v1.0.1"
-    }
+    },
+    
 ];

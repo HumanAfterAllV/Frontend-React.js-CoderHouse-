@@ -7,7 +7,6 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction:row;
-	overflow: hidden;
 }
 
 
@@ -42,6 +41,7 @@
 
 .container-icon {
 	position: relative;
+	z-index: 2;
 }
 
 .count-products {
@@ -66,7 +66,7 @@
 }
 
 .container-cart-products {
-	position:fixed;
+	position:absolute;
 	top: 50px;
 	right: 0;
 
@@ -146,8 +146,15 @@
 .cart-empty{
 	font-family: "rajdhani-regular";
 	font-weight: 900;
+	padding: 20px;
+	text-align: center;
 }
 
 .hidden-cart {
 	display: none;
+}
+
+.price {
+	font-size: 18px;
+	font-weight: 900;
 }

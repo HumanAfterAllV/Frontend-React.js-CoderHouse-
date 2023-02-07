@@ -36,7 +36,7 @@ const Main = ({
 						<h3>{product.title}</h3>
             <p>Size {product.size} <span className='price'>Price: ${product.price}</span></p>
             <p>{product.descriptions}</p>
-            <button aria-label="<%= word %>" class="article__btn--add centered" data-text="Add" onClick={() => onAddProduct(product)}>
+            <button aria-label="<%= word %>" className="article__btn--add centered" data-text="Add" onClick={() => onAddProduct(product)}>
               <span>Added</span>
             </button>
 					</div>

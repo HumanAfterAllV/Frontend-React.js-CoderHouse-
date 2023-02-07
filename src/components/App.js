@@ -17,7 +17,6 @@ const App = () => {
         countProducts = {countProducts}
         setCountProducts = {setCountProducts} 
       />
-      <Side/>
       <Main
         allProducts = {allProducts}
         setAllProducts = {setAllProducts}
@@ -26,6 +25,7 @@ const App = () => {
         countProducts = {countProducts}
         setCountProducts = {setCountProducts} 
       />
+      <Side/>
     </div>
   )
 }
