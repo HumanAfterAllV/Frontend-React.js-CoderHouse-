@@ -59,7 +59,7 @@ const ProductsUserShop = () => {
 			    </button>
 
                 <button className='btn-clear-all' onClick={onCleanCart}>
-                    Empty
+                    Delete
                 </button>
             </div>
             

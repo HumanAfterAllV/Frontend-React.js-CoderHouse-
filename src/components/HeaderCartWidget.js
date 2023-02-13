@@ -84,7 +84,7 @@ const HeaderCartWidget = () => {
 								</button>
 							</Link>
 							<button className='btn-clear-all' onClick={onCleanCart}>
-								Empty
+								Delete
 							</button>
 						</>
 					) : (
