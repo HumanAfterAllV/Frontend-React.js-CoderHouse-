@@ -1,4 +1,5 @@
 import { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import {contexto} from './CustomProvider'
 
 const HeaderCartWidget = () => {
@@ -77,7 +78,11 @@ const HeaderCartWidget = () => {
 								<h3>Total:</h3>
 								<span className='total-pagar'>${totalProducts}</span>
 							</div>
-
+							<Link to="/products/shopping">
+								<button className='btn-shop-all' >
+									Shopping
+								</button>
+							</Link>
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Empty
 							</button>
