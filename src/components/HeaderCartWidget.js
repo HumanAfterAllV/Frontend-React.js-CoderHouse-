@@ -1,12 +1,19 @@
-const HeaderCartWidget = ({
-    onCleanCart,
-    onDeleteProduct,
-    active,
-    setActive,
-    allProducts,
-    totalProducts,
-    countProducts
-}) => {
+import { useContext, useState } from 'react'
+import {contexto} from './CustomProvider'
+
+const HeaderCartWidget = () => {
+	const valueContext = useContext(contexto)
+	const { allProducts, setAllProducts, totalProducts, setTotalProducts, countProducts, setCountProducts, onDeleteProduct 
+	} = valueContext
+
+	const [active, setActive] = useState(false);
+
+	const onCleanCart = () => 
+	{
+		  setAllProducts([]);
+		  setTotalProducts(0);
+		  setCountProducts(0);
+	};
   return (
     <>
             <div className='container-icon animate__animated animate__slideInUp'>

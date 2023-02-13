@@ -1,12 +1,15 @@
 import { BrowserRouter } from "react-router-dom"
-import Prg from "./Prg"
+import CustomProvider from "./CustomProvider"
+import Container from "./Container"
 
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Prg/>
-    </BrowserRouter>
+    <CustomProvider>
+      <BrowserRouter>
+        <Container/>
+      </BrowserRouter>
+    </CustomProvider>
   )
 }
 

@@ -1,7 +1,13 @@
 import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
+import { contexto } from './CustomProvider';
 import data from '../products/data';
 
-const ProductDetails = ({onAddProduct}) => {
+const ProductDetails = () => {
+  
+  const valueContext = useContext(contexto)
+	const { onAddProduct } = valueContext
+
   const {productId} = useParams();
   const product = data.find(product => product.id === parseInt(productId));
   return (

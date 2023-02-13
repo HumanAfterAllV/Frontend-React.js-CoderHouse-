@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { contexto } from './CustomProvider';
 import data from '../products/data'
 
-const ProductList = ({onAddProduct}) => {
+const ProductList = () => {
+
+  const valueContext = useContext(contexto)
+	const { onAddProduct } = valueContext
   return (
     <section className='secProducts'>
       {data && data.map(product => (
