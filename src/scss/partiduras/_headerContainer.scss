@@ -1,0 +1,161 @@
+#header{
+    grid-area: header;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+
+//title header
+.header__title{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.header__title a{
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 2.5rem;
+	font-weight: 500;
+    font-family: "library-3";
+    
+    color: black;
+}
+
+
+//icon header
+.icon-cart {
+	width: 40px;
+	height: 40px;
+	stroke: #000;
+}
+
+.icon-cart:hover {
+	cursor: pointer;
+}
+
+.container-icon {
+	position: relative;
+	z-index: 2;
+}
+
+.count-products {
+	position: absolute;
+	top: 55%;
+	right: 0;
+
+	background-color: #000;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.count-products span{
+	font-size: 14px;
+	font-family: "rajdhani-regular";
+}
+
+.container-cart-products {
+	position:absolute;
+	top: 50px;
+	right: 0;
+
+	background-color: #fff;
+	width: 400px;
+	z-index: 1;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.cart-product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.info-cart-product {
+	display: flex;
+	justify-content: space-between;
+	flex: 0.8;
+}
+
+.titulo-producto-carrito {
+	font-size: 1rem;
+	font-family: "rajdhani-regular";
+	font-weight: 500;
+
+}
+
+.precio-producto-carrito {
+	font-family: "rajdhani-regular";
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.cantidad-producto-carrito {
+	font-family: "rajdhani-regular";
+	font-weight: 400;
+	font-size: 20px;
+	margin-right: 25px;
+}
+
+.icon-close {
+	width: 25px;
+	height: 25px;
+}
+
+.icon-close:hover {
+	stroke: red;
+	cursor: pointer;
+}
+
+.cart-total {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem 0;
+	gap: 20px;
+}
+
+.cart-total h3 {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: "rajdhani-regular";
+}
+
+.total-pagar {
+	font-size: 20px;
+	font-weight: 900;
+	font-family: "rajdhani-regular";
+}
+
+.cart-empty{
+	font-family: "rajdhani-regular";
+	font-weight: 900;
+	padding: 20px;
+	text-align: center;
+}
+
+.hidden-cart {
+	display: none;
+}
+
+.price {
+	font-size: 18px;
+	font-weight: 900;
+}

@@ -12,10 +12,5 @@
     grid-template-rows: 100px 1fr;
     grid-template-columns: 150px 1fr;
     grid-template-areas: "aside header header" 
-                         "aside main main";
-}
-
-#main{
-    display: flex;
-    grid-area: main;
+                         "aside sectionMain sectionMain";
 }

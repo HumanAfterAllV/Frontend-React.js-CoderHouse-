@@ -1,0 +1,51 @@
+#aside{
+    grid-area: aside;
+	display: flex;
+	flex-direction:column;
+	align-content: space-around;
+	justify-content: space-around;
+	overflow: hidden;
+	
+	background-color: black;
+}
+
+#container:has(#aside:hover){
+	grid-template-columns: 10% auto;
+}
+
+#container{
+	transition: 300ms;
+	display: grid;
+	grid-template-columns: var(--left, 90px) auto;
+}
+
+#container:has(#aside:hover){
+	--left: 10%;
+}
+
+.aside__chl{
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.aside__chl--ul--item:hover{
+	transition: 400ms;
+	transform: translateX(10%);
+}
+
+.aside__chl--ul li{
+	list-style: none;
+
+	padding-bottom: 4rem;
+}
+
+.aside__chl--ul--item a{
+	text-decoration: none;
+
+	font-family: "rajdhani-regular";
+	font-weight: 550;
+	font-size: 1.4rem;
+	color: whitesmoke;
+	
+}

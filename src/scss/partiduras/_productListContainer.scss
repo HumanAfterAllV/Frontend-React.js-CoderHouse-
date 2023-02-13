@@ -1,0 +1,177 @@
+#sectionMain{
+    grid-area: sectionMain;
+    overflow: auto;
+}
+
+.secProducts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+	gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.secProducts__article {
+	border-radius: 10px;
+    height: 520px;
+}
+
+.secProducts__article:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secProducts__article img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	transition: all 0.5s;
+}
+
+.secProducts__article figure{
+	overflow: hidden;
+}
+
+.secProducts__article:hover img {
+	transform: scale(1.1);
+}
+
+.secProducts__article--info{
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+
+	padding: 1rem 1.5rem;
+	line-height: 2;
+	gap: 10px;
+}
+
+.secProducts__article--info h3{
+    font-family: "rajdhani-regular";
+}
+
+.secProducts__article--info p{
+    font-family: "rajdhani";
+}
+
+.hidden {
+	display: none;
+}
+
+.btn-clear-all {
+	display: block;
+	border: none;
+	width: 100%;
+	padding: 15px 0;
+	margin-top: 10px;
+	background-color: #000;
+	color: #fff;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	font-family: "rajdhani-regular";
+    font-weight: 900;
+    font-size: 16px;
+	cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-clear-all:hover{
+  	background-color: #333;
+  	transform: scale(1.03);
+  	border-radius: 0;
+}
+
+.centered {
+    position:relative;
+    left: 35px;
+    top: 30px;
+    transform: translate(-50%, -50%); 
+}
+      
+.article__btn--add {
+    font-family: "rajdhani-regular";
+    font-weight: 900;
+  
+    color: white;
+    background: black;
+  
+    padding: 10px;
+    width: 80px;
+    
+    text-decoration: none; 
+    text-align: center; 
+}
+
+.article__btn--add span {
+    display: inline-block;
+    min-width: 0.30em;
+    text-transform: uppercase;
+    transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+    opacity: 0;
+    transform: translate(0, -20px); 
+}
+
+.article__btn--add:before {
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: 0.25s cubic-bezier(0.5, -1, 0.5, 2);
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    opacity: 1;
+    transform: translate(0, 0px); 
+}
+
+.article__btn--add:hover:before, .article__btn--add:focus:before {
+    opacity: 0;
+    transform: translate(0, 20px); 
+}
+
+.article__btn--add:hover span, .article__btn--add:focus span {
+    opacity: 1;
+    transform: translate(0, 0); 
+}
+
+//SecSingleProduct
+
+.secSingleProduct{
+    width: 100%;
+    height: 100%;
+}
+
+.secSingleArticle{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secSingleArticle__fig{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.secSingleArticle__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.secSingleArticle__details h1{
+    font-family: "rajdhani-regular";
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.secSingleArticle__details p{
+    font-family: "rajdhani";
+    font-size: 1.5rem;
+}
