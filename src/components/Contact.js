@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section className="secContact">
         <div className="contact__1">
-            <h5>Newsletters:</h5>
+            <h5>Newsletters</h5>
             <p>Subscribe to our newsletter to recibe new updates</p>
         </div>
         <div className="contact__2">

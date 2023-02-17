@@ -1,0 +1,31 @@
+Documentación de Proyecto Frontend - Comision 43575 -Israel Hernandez Galicia
+
+Buen día profesor, espero se encuentre bien de salud, y le agradezco su forma
+de enseñar, sin mas le describire de que fue mi proyecto:
+
+1.- Ecommerce de chamarras personalizadas artesanales
+
+2.-El ecommerce trate de hacerlo estetico, siguiendo algunas reglas que vimos en clase
+e implementando propias para lograr desarrollarme como desarrollador Frontend, se que me 
+falta mucho por ver, mas que nada este curso me puso aprueba en mis conocimientos. 
+
+3.- No contiene consumo de ningun tipo de API, consumi JSON
+
+4.- No contiene firebase, ya que quise mantener la estetica que inicie creando para el proyecto
+
+5.- El responsive designe es nulo, me falla y tengo que practicarlo mas
+
+6.- No segui algunos nombres para ciertas variables, pero se trato de seguir los nombres de los
+componentes
+
+6.- El codigo es limpio, estetico, organizado y puntual, lo que me ayudo mucho fue es uso del useContext
+
+7.- Se uso BEM de varios estilos para practicar y ver cual es el que mas se adecua al proyecto
+
+8.- Se uso SASS para el estilo
+
+9.- No implemente filtros de busqueda por que son pocos productos los que añadi, senti que era innecesario :(
+
+Creo que son todos los puntos que queria recarlar, tuve unos problemas personales en el tiempo del curso que
+me impidio algunas veces seguir el paso, pero sin duda es de los mejores cursos y profesores que me han tocado, espero verlo
+en alguna otra Comision, igual espero que el proyecto este bien al igual que la logica, cuidese profe y saludos desde Mexico :)
