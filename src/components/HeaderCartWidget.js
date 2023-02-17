@@ -46,7 +46,7 @@ const HeaderCartWidget = () => {
 									<div className='cart-product' key={product.id}>
 										<div className='info-cart-product'>
 											<span className='cantidad-producto-carrito'>
-												{product.quantity}
+												{product.stock}
 											</span>
 											<p className='titulo-producto-carrito'>
 												{product.title}

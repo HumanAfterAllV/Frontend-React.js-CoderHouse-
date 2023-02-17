@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { contexto } from './CustomProvider';
+import { db } from '../firebase';
+import { collection, getDocs} from 'firebase/firestore';
 import data from '../products/data'
+
+const productsCollection = collection(db, "products")
+const pedidoFirestore = getDocs(productsCollection)
+
 
 const ProductList = () => {
 

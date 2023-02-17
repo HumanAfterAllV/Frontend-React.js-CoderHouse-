@@ -6,7 +6,6 @@ const data = [
         size: "G",
         price: 1299,
         stock: 1,
-        quantity: 1,
         descriptions: "Eren Jaeger Design Denim Jacket v1.0.1"
     },
     {
@@ -16,7 +15,6 @@ const data = [
         size: "M",
         price: 999,
         stock: 1,
-        quantity: 1,
         descriptions: "Spiderman Design Denim Jacket v1.0.1"
     },
     {
@@ -26,7 +24,6 @@ const data = [
         price: 999,
         size: "M",
         stock: 1,
-        quantity: 1,
         descriptions: "RickAndMorty Design Denim Jacket v1.0.1"
     },
     {
@@ -36,7 +33,6 @@ const data = [
         size: "G",
         price: 1299,
         stock: 1,
-        quantity: 1,
         descriptions: "Goku Design Denim Jacket v1.0.1"
     },
     {
@@ -46,7 +42,6 @@ const data = [
         size: "M",
         price: 999,
         stock: 1,
-        quantity: 1,
         descriptions: "Pikachu Design Denim Jacket v1.0.1"
     },
     {
@@ -56,7 +51,6 @@ const data = [
         price: 999,
         size: "M",
         stock: 1,
-        quantity: 1,
         descriptions: "SailorMoon Design Denim Jacket v1.0.1"
     },
     {
@@ -66,7 +60,6 @@ const data = [
         price: 999,
         size: "S",
         stock: 1,
-        quantity: 1,
         descriptions: "Sabrina Design Denim Jacket v1.0.1"
     },
     {
@@ -76,7 +69,6 @@ const data = [
         price: 999,
         size: "M",
         stock: 1,
-        quantity: 1,
         descriptions: "KUTE Design Denim Jacket v1.0.1"
     },
     {
@@ -86,7 +78,6 @@ const data = [
         price: 999,
         size: "S",
         stock: 1,
-        quantity: 1,
         descriptions: "Kute Design Denim Jacket v1.0.1"
     },
     {
@@ -96,7 +87,6 @@ const data = [
         price: 999,
         size: "G",
         stock: 1,
-        quantity: 1,
         descriptions: "Leon Design Denim Jacket v1.0.1"
     },
     {
@@ -106,17 +96,15 @@ const data = [
         price: 999,
         size: "S",
         stock: 1,
-        quantity: 1,
         descriptions: "Alice Design Denim Jacket v1.0.1"
     },
     {
         id: 12,
         title: "Denim Jacket - CyJP DS_12",
         img: require("../assets/img/products/background/CyJP.1.0.png"),
-        price: 999,
+        price: 1299,
         size: "G",
         stock: 1,
-        quantity: 1,
         descriptions: "CyJP Design Denim Jacket v1.0.1"
     }
 ];

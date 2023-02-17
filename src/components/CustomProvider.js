@@ -16,8 +16,8 @@ const CustomProvider = ({ children }) => {
     {
 		  const results = allProducts.filter(item => item.id !== product.id);
 
-		  setTotalProducts(totalProducts - product.price * product.quantity);
-		  setCountProducts(countProducts - product.quantity);
+		  setTotalProducts(totalProducts - product.price * product.stock);
+		  setCountProducts(countProducts - product.stock);
 		  setAllProducts(results);
 	  };
 
@@ -26,16 +26,16 @@ const CustomProvider = ({ children }) => {
       if (allProducts.find(item => item.id === product.id)) {
         const products = allProducts.map(item =>
           item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, stock: item.stock + 1 }
             : item
         );
-        setTotalProducts(totalProducts + product.price * product.quantity);
-        setCountProducts(countProducts + product.quantity);
+        setTotalProducts(totalProducts + product.price * product.stock);
+        setCountProducts(countProducts + product.stock);
         return setAllProducts([...products]);
       }
   
-      setTotalProducts(totalProducts + product.price * product.quantity);
-      setCountProducts(countProducts + product.quantity);
+      setTotalProducts(totalProducts + product.price * product.stock);
+      setCountProducts(countProducts + product.stock);
       setAllProducts([...allProducts, product]);
     };
 
