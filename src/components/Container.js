@@ -1,13 +1,13 @@
-import AsideMenu from "./AsideMenu";
-import HeaderContainer from "./HeaderContainer";
-import ProductsContainer from "./ProductsContainer";
+import CartWidgetContainer from "./CartWidgetContainer";
+import ItemListContainer from "./ItemListContainer";
+import NavBar from "./NavBar";
 
 const Container = () => {
   return (
     <section id="container">
-        <HeaderContainer/>
-        <ProductsContainer/>
-        <AsideMenu/>
+        <CartWidgetContainer/>
+        <ItemListContainer/>
+        <NavBar/>
     </section>
   )
 }

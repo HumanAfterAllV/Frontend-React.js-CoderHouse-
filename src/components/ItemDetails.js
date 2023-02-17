@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { contexto } from './CustomProvider';
 import data from '../products/data';
 
-const ProductDetails = () => {
+const ItemDetails = () => {
   
   const valueContext = useContext(contexto)
 	const { onAddProduct } = valueContext
@@ -29,4 +29,4 @@ const ProductDetails = () => {
   )
 }
 
-export default ProductDetails
+export default ItemDetails

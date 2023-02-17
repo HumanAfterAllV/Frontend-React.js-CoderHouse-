@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const AsideMenu = () => {
+const NavBar = () => {
   return (
       <aside id="aside">
         <div>
@@ -9,8 +9,8 @@ const AsideMenu = () => {
         <div className="aside__chl animate__animated animate__slideInLeft">
           <ul className="aside__chl--ul">
             <li className="aside__chl--ul--item"><Link to={"/"}>Home</Link></li>
-            <li className="aside__chl--ul--item"><Link to={"/products/shopping"}>Cart</Link></li>
-            <li className="aside__chl--ul--item"><Link to={"/"}>Contact</Link></li>
+            <li className="aside__chl--ul--item"><Link to={"/products/checkout"}>Cart</Link></li>
+            <li className="aside__chl--ul--item"><Link to={"/contact"}>News</Link></li>
           </ul>
         </div>
         <div className="aside__chl--icon animate__animated animate__slideInLeft">
@@ -21,4 +21,4 @@ const AsideMenu = () => {
   )
 }
 
-export default AsideMenu
+export default NavBar

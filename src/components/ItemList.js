@@ -9,7 +9,7 @@ const productsCollection = collection(db, "products")
 const pedidoFirestore = getDocs(productsCollection)
 
 
-const ProductList = () => {
+const ItemList = () => {
 
   const valueContext = useContext(contexto)
 	const { onAddProduct } = valueContext
@@ -34,4 +34,4 @@ const ProductList = () => {
   )
 }
 
-export default ProductList
+export default ItemList

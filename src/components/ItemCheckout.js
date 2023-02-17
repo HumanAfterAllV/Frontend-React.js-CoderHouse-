@@ -1,17 +1,12 @@
 import { useContext} from 'react'
 import {contexto} from './CustomProvider'
 
-const ProductsUserShop = () => {
+const ItemCheckout = () => {
     const valueContext = useContext(contexto)
-	const { allProducts, setAllProducts, totalProducts, setTotalProducts, setCountProducts, onDeleteProduct 
+	const { allProducts, totalProducts, onDeleteProduct, onCleanCart 
 	} = valueContext
 
-	const onCleanCart = () => 
-	{
-		  setAllProducts([]);
-		  setTotalProducts(0);
-		  setCountProducts(0);
-	};
+
   return (
 <section className='section-shop-products'>
     <div className='container-shop-products'>
@@ -72,4 +67,4 @@ const ProductsUserShop = () => {
   )
 }
 
-export default ProductsUserShop
+export default ItemCheckout

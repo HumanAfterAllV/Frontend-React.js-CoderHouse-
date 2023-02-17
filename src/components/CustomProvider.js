@@ -5,12 +5,20 @@ export const contexto = createContext();
 const Provider = contexto.Provider
 
 const CustomProvider = ({ children }) => {
-  
-//useState control
-    const [allProducts, setAllProducts] = useState([]);
-    const [totalProducts, setTotalProducts] = useState(0);
-    const [countProducts, setCountProducts] = useState(0);
 
+//useState control
+  const [allProducts, setAllProducts] = useState([]);
+  const [totalProducts, setTotalProducts] = useState(0);
+  const [countProducts, setCountProducts] = useState(0);
+  
+//Clean list products(delete list)
+    const onCleanCart = () => 
+    {
+      setAllProducts([]);
+      setTotalProducts(0);
+      setCountProducts(0);
+    };
+    
 //Delete products
     const onDeleteProduct = product =>
     {
@@ -39,16 +47,19 @@ const CustomProvider = ({ children }) => {
       setAllProducts([...allProducts, product]);
     };
 
-    const valueContext = {
-        allProducts: allProducts,
-        setAllProducts: setAllProducts,
-        totalProducts: totalProducts,
-        setTotalProducts: setTotalProducts,
-        countProducts: countProducts,
-        setCountProducts: setCountProducts,
-        onDeleteProduct: onDeleteProduct,
-        onAddProduct: onAddProduct
+const valueContext = {
+  allProducts: allProducts,
+  setAllProducts: setAllProducts,
+  totalProducts: totalProducts,
+  setTotalProducts: setTotalProducts,
+  countProducts: countProducts,
+  setCountProducts: setCountProducts,
+  onDeleteProduct: onDeleteProduct,
+  onAddProduct: onAddProduct,
+  onCleanCart: onCleanCart
     }
+
+
   return (
     <Provider value={valueContext}>
         {children}

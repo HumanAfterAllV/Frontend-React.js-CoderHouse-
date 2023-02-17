@@ -1,13 +1,11 @@
-//Abstrascts import
-@import "./scss/abstracts/variables";
-
 //Base import
 @import "./scss/base/reset";
 @import "./scss/base/fonts";
 
-//Partiduras import
+//Parts import
 @import "./scss/parts/grid";
 @import "./scss/parts/animaciones";
-@import "./scss/parts/headerContainer";
-@import "./scss/parts/asideMenu";
-@import "./scss/parts/productsContainer";
+@import "./scss/parts/cartWidgetContainer";
+@import "./scss/parts/navBar";
+@import "./scss/parts/itemListContainer";
+@import "./scss/parts/contact";

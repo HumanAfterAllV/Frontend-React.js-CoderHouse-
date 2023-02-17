@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import HeaderCartWidget from "./HeaderCartWidget";
+import CartWidget from "./CartWidget";
 
-const HeaderContainer = () => {
+const CartWidgetContainer = () => {
 	return (
 		<header id="header">
       		<div>				
@@ -9,9 +9,9 @@ const HeaderContainer = () => {
       		<div className="header__title animate__animated animate__slideInDown">
 				<Link to={"/"}>InkV1.0.1</Link>
       		</div>
-			<HeaderCartWidget/>
+			<CartWidget/>
 		</header>
 	);
 };
 
-export default HeaderContainer
+export default CartWidgetContainer

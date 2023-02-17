@@ -2,19 +2,13 @@ import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {contexto} from './CustomProvider'
 
-const HeaderCartWidget = () => {
+const CartWidget = () => {
 	const valueContext = useContext(contexto)
-	const { allProducts, setAllProducts, totalProducts, setTotalProducts, countProducts, setCountProducts, onDeleteProduct 
+	const { allProducts, totalProducts, countProducts, onDeleteProduct, onCleanCart
 	} = valueContext
 
 	const [active, setActive] = useState(false);
 
-	const onCleanCart = () => 
-	{
-		  setAllProducts([]);
-		  setTotalProducts(0);
-		  setCountProducts(0);
-	};
   return (
     <>
             <div className='container-icon animate__animated animate__slideInUp'>
@@ -97,4 +91,4 @@ const HeaderCartWidget = () => {
   )
 }
 
-export default HeaderCartWidget
+export default CartWidget
