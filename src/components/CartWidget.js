@@ -72,7 +72,7 @@ const CartWidget = () => {
 								<h3>Total:</h3>
 								<span className='total-pagar'>${totalProducts}</span>
 							</div>
-							<Link to="/products/shopping">
+							<Link to="/products/checkout">
 								<button className='btn-shop-all' >
 									Shopping
 								</button>
